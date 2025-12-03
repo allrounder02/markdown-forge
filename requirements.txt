@@ -1,0 +1,12 @@
+# Python Dependencies
+markdown-it-py[plugins]>=3.0.0
+weasyprint>=60.0
+python-docx>=1.0.0
+jinja2>=3.1.0
+pyyaml>=6.0
+pydantic>=2.0.0
+typer>=0.9.0
+streamlit>=1.28.0
+
+# Optional: For development
+# watchdog>=3.0.0  # Auto-reload support
