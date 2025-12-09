@@ -116,6 +116,7 @@ if selected_file:
         with open(file_path, "r", encoding="utf-8") as f:
             st.session_state.md_content = f.read()
         st.session_state.current_file = selected_file
+        st.rerun()  # Trigger refresh to update preview panels
 
     try:
         config = load_config(config_path)
@@ -160,7 +161,7 @@ if selected_file:
             st.session_state.md_content, 
             height=800, 
             label_visibility="collapsed",
-            key="markdown_editor"
+            key=f"markdown_editor_{st.session_state.current_file}"
         )
         
         # Update session state if content changed
