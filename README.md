@@ -142,6 +142,8 @@ python main.py sample.md -f pdf -c config/custom_config.yaml
 
 ### Markdown Features
 
+The app uses the standard html features for markdown
+
 #### Page Breaks
 ```markdown
 Content on page 1
@@ -349,4 +351,4 @@ If you encounter any issues, please:
 
 ---
 
-**Made with ❤️ using Python and Streamlit**
+**Made with AI and ❤️ using Python and Streamlit**
